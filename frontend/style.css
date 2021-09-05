@@ -1,0 +1,12 @@
+.content {
+    display: inline-flex;
+    margin: 70px 50px;
+    width: 100%;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    justify-content: space-between;
+}
+
+.content .post{
+    margin: 20px 10px;
+}
