@@ -1,9 +1,9 @@
 from django.contrib import admin
 from django.urls import path
 
-from .test_view import foo
+from posts.views import PostsListView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('foo/', foo),
+    path('posts/', PostsListView.as_view()),
 ]
