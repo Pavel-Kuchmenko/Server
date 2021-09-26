@@ -1,11 +1,12 @@
-{%extends 'base.html'%}
+{% extends 'base.html' %}
 
-{%block additional}
+{% block additional %}
 <h1>Hello</h1>
-{%endblock additional}
+{% endblock additional%}
 
 
-{%block content%}
+{% block content %}
+
 Posts:
 <ul>
     {% for post in object_list %}
@@ -19,4 +20,4 @@ Posts:
     {% endfor %}
 </ul>
 
-{%endblock content%}
+{% endblock content %}

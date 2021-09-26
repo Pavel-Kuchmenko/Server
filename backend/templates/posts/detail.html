@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block additional %}
+<h1>Nothing to show</h1>
+{% endblock additional%}
+
+
+{% block content %}
+
+Posts: -------------
+<h1>Header:{{object.title}}</h1>
+<h1>Content:{{object.content}}</h1>
+<h1>Author:{{object.author}}</h1>
+
+{% endblock content %}

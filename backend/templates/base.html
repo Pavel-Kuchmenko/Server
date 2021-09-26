@@ -1,6 +1,8 @@
+{% load static %}
 <html lang="en">
 <head>
     <title>SkillUp blog</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
 </head>
 <body>
     <div class="header">
@@ -8,6 +10,10 @@
     </div>
     <div class="body">
         {% block content %} {% endblock content %}
+    </div>
+    <div>
+        <h2>{% block additional %} {% endblock additional %}</h2>
+        <h1>========================================</h1>
     </div>
     <div class="footer">
         Footer
